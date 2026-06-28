@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Custom Wooden Beds & Headboards in Delhi NCR | WoodKarigari</title>
-    <meta name="description" content="Custom wooden beds & designer headboards in Delhi NCR. Premium sheesham, teak & BWR plywood. Hydraulic storage, custom sizes. Starting ₹15,000. Free delivery & installation." />
+    <meta
+      name="description"
+      content="Custom wooden beds & designer headboards in Delhi NCR. Premium sheesham, teak & BWR plywood. Hydraulic storage, custom sizes. Starting ₹15,000. Free delivery & installation."
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link
@@ -15,45 +18,53 @@
     <style>
       /* Mobile menu slide animation — must be here since it's toggled via JS class */
       #mobileMenu {
-        transition: max-height 0.3s ease, opacity 0.3s ease;
+        transition:
+          max-height 0.3s ease,
+          opacity 0.3s ease;
         max-height: 0;
         opacity: 0;
         overflow: hidden;
       }
+
       #mobileMenu.open {
         max-height: 500px;
         opacity: 1;
+      }
+
+      /* FAQ accordion animation */
+      .faq-panel {
+        transition: max-height 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      .faq-icon {
+        transition: transform 0.2s ease;
       }
     </style>
   </head>
 
   <body class="bg-[#2b170f]">
-
     <!-- ═══ NAVBAR (injected by components.js) ═══ -->
     <div id="site-nav"></div>
 
     <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
     <section class="bg-[#2b170f]">
       <div
-        class="
-          max-w-screen-xl mx-auto
-          px-5 sm:px-8 md:px-10 lg:px-16 xl:px-28
-          flex flex-col lg:flex-row
-          items-start lg:items-center
-          gap-8 lg:gap-16
-          py-10 sm:py-12 md:py-14
-          lg:py-0 lg:min-h-[calc(100vh-80px)]
-        "
+        class="max-w-screen-xl mx-auto px-5 sm:px-8 md:px-10 lg:px-16 xl:px-28 flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-16 py-10 sm:py-12 md:py-14 lg:py-0 lg:min-h-[calc(100vh-80px)]"
       >
         <!-- ── LEFT ── -->
-        <div class="w-full lg:flex-1 max-w-[560px] flex flex-col space-y-4 sm:space-y-5 lg:space-y-6">
-
+        <div
+          class="w-full lg:flex-1 max-w-[560px] flex flex-col space-y-4 sm:space-y-5 lg:space-y-6"
+        >
           <!-- Eyebrow -->
           <div class="flex items-center gap-3">
-            <span class="w-8 sm:w-10 md:w-14 h-[2px] bg-[#a9744b] shrink-0"></span>
+            <span
+              class="w-8 sm:w-10 md:w-14 h-[2px] bg-[#a9744b] shrink-0"
+            ></span>
             <p
               class="text-[9px] sm:text-[10px] md:text-xs text-[#a9744b] tracking-[2.5px] uppercase font-medium"
-              style="font-family: 'DM Mono', monospace"
+              style="font-family: &quot;DM Mono&quot;, monospace"
             >
               Bedroom furniture
             </p>
@@ -62,7 +73,7 @@
           <!-- Headline -->
           <h1
             class="text-[clamp(1.65rem,5vw,2.75rem)] font-bold text-white leading-[1.15]"
-            style="font-family: 'Playfair Display', serif"
+            style="font-family: &quot;Playfair Display&quot;, serif"
           >
             Custom Wooden Beds &amp; Designer
             <span class="text-[#a9744b] italic">Headboards</span>
@@ -72,7 +83,7 @@
           <!-- Description — hidden on mobile to keep hero tight -->
           <p
             class="text-white/70 text-sm sm:text-base leading-relaxed hidden sm:block"
-            style="font-family: 'Inter', sans-serif"
+            style="font-family: &quot;Inter&quot;, sans-serif"
           >
             Your bedroom is your sanctuary — and the bed is its centrepiece. At
             WoodKarigari, we craft custom wooden beds and designer headboards
@@ -83,9 +94,10 @@
           <!-- Mobile-only short description -->
           <p
             class="text-white/65 text-sm leading-relaxed sm:hidden"
-            style="font-family: 'Inter', sans-serif"
+            style="font-family: &quot;Inter&quot;, sans-serif"
           >
-            Premium sheesham, teak &amp; BWR plywood. Custom size. Free delivery &amp; installation across Delhi&nbsp;NCR.
+            Premium sheesham, teak &amp; BWR plywood. Custom size. Free delivery
+            &amp; installation across Delhi&nbsp;NCR.
           </p>
 
           <!-- CTA Buttons -->
@@ -103,16 +115,19 @@
               📞 Call: 9910785424
             </a>
           </div>
-
         </div>
         <!-- ── end left ── -->
 
         <!-- ── RIGHT: Why Our Beds Card ── -->
-        <div class="w-full lg:flex-1 flex justify-center lg:justify-end items-center">
-          <div class="w-full max-w-[480px] bg-[#3d2010] border border-[#5a3520] rounded-xl p-5 sm:p-6 lg:p-8">
+        <div
+          class="w-full lg:flex-1 flex justify-center lg:justify-end items-center"
+        >
+          <div
+            class="w-full max-w-[480px] bg-[#3d2010] border border-[#5a3520] rounded-xl p-5 sm:p-6 lg:p-8"
+          >
             <p
               class="text-[#c07d41] text-lg sm:text-xl font-semibold mb-4 sm:mb-5"
-              style="font-family: 'Playfair Display', serif"
+              style="font-family: &quot;Playfair Display&quot;, serif"
             >
               Why Our Beds?
             </p>
@@ -120,49 +135,417 @@
             <div>
               <div class="flex items-center gap-3 py-2.5 sm:py-3">
                 <span class="text-[#c07d41] font-bold shrink-0 text-sm">✓</span>
-                <p class="text-white/80 text-sm" style="font-family: 'Inter', sans-serif">Custom size — any length &amp; width</p>
+                <p
+                  class="text-white/80 text-sm"
+                  style="font-family: &quot;Inter&quot;, sans-serif"
+                >
+                  Custom size — any length &amp; width
+                </p>
               </div>
               <div class="h-px bg-[#4f3020]"></div>
 
               <div class="flex items-center gap-3 py-2.5 sm:py-3">
                 <span class="text-[#c07d41] font-bold shrink-0 text-sm">✓</span>
-                <p class="text-white/80 text-sm" style="font-family: 'Inter', sans-serif">Hydraulic &amp; drawer storage options</p>
+                <p
+                  class="text-white/80 text-sm"
+                  style="font-family: &quot;Inter&quot;, sans-serif"
+                >
+                  Hydraulic &amp; drawer storage options
+                </p>
               </div>
               <div class="h-px bg-[#4f3020]"></div>
 
               <div class="flex items-center gap-3 py-2.5 sm:py-3">
                 <span class="text-[#c07d41] font-bold shrink-0 text-sm">✓</span>
-                <p class="text-white/80 text-sm" style="font-family: 'Inter', sans-serif">Solid sheesham &amp; teak available</p>
+                <p
+                  class="text-white/80 text-sm"
+                  style="font-family: &quot;Inter&quot;, sans-serif"
+                >
+                  Solid sheesham &amp; teak available
+                </p>
               </div>
               <div class="h-px bg-[#4f3020]"></div>
 
               <div class="flex items-center gap-3 py-2.5 sm:py-3">
                 <span class="text-[#c07d41] font-bold shrink-0 text-sm">✓</span>
-                <p class="text-white/80 text-sm" style="font-family: 'Inter', sans-serif">ISI-certified BWR plywood carcass</p>
+                <p
+                  class="text-white/80 text-sm"
+                  style="font-family: &quot;Inter&quot;, sans-serif"
+                >
+                  ISI-certified BWR plywood carcass
+                </p>
               </div>
               <div class="h-px bg-[#4f3020]"></div>
 
               <div class="flex items-center gap-3 py-2.5 sm:py-3">
                 <span class="text-[#c07d41] font-bold shrink-0 text-sm">✓</span>
-                <p class="text-white/80 text-sm" style="font-family: 'Inter', sans-serif">Hettich soft-close drawer systems</p>
+                <p
+                  class="text-white/80 text-sm"
+                  style="font-family: &quot;Inter&quot;, sans-serif"
+                >
+                  Hettich soft-close drawer systems
+                </p>
               </div>
               <div class="h-px bg-[#4f3020]"></div>
 
               <div class="flex items-center gap-3 py-2.5 sm:py-3">
                 <span class="text-[#c07d41] font-bold shrink-0 text-sm">✓</span>
-                <p class="text-white/80 text-sm" style="font-family: 'Inter', sans-serif">Starting from ₹15,000 onward</p>
+                <p
+                  class="text-white/80 text-sm"
+                  style="font-family: &quot;Inter&quot;, sans-serif"
+                >
+                  Starting from ₹15,000 onward
+                </p>
               </div>
               <div class="h-px bg-[#4f3020]"></div>
 
               <div class="flex items-center gap-3 py-2.5 sm:py-3">
                 <span class="text-[#c07d41] font-bold shrink-0 text-sm">✓</span>
-                <p class="text-white/80 text-sm" style="font-family: 'Inter', sans-serif">Free delivery &amp; installation</p>
+                <p
+                  class="text-white/80 text-sm"
+                  style="font-family: &quot;Inter&quot;, sans-serif"
+                >
+                  Free delivery &amp; installation
+                </p>
               </div>
             </div>
           </div>
         </div>
         <!-- ── end right ── -->
+      </div>
+    </section>
 
+    <!-- ═══════════════════════════ BED TYPES ═══════════════════════════ -->
+    <section class="bg-[#f7f4ef] py-12 sm:py-16 lg:py-20 px-5 sm:px-8 md:px-10 lg:px-16 xl:px-28 space-y-10 sm:space-y-12 lg:space-y-16">
+      <div class="flex flex-col items-start space-y-4 max-w-7xl mx-auto">
+        <div class="flex items-center gap-3">
+          <span
+            class="w-8 sm:w-10 md:w-14 h-[2px] bg-[#a9744b] shrink-0"
+          ></span>
+          <p
+            class="text-[9px] sm:text-[10px] md:text-xs text-[#a9744b] tracking-[2.5px] uppercase font-medium"
+            style="font-family: &quot;DM Mono&quot;, monospace"
+          >
+            Bed Types
+          </p>
+        </div>
+        <div class="space-y-2">
+          <p
+            class="text-[clamp(1.5rem,4vw,2.25rem)] font-bold text-[#2b170f] leading-[1.2]"
+            style="font-family: &quot;Playfair Display&quot;, serif"
+          >
+            Wooden Bed Types We Craft
+          </p>
+          <p
+            class="text-base sm:text-lg max-w-xl text-[#676d72]"
+            style="font-family: &quot;Inter&quot;, sans-serif"
+          >
+            Every bed is made to order - your dimensions, your design, your
+            material choice. We make beds in all standard and non-standard
+            sizes.
+          </p>
+        </div>
+      </div>
+
+      <!-- Grid: 1 col mobile → 2 col from sm up -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-7xl mx-auto">
+        <div class="hover:shadow-xl transition duration-200">
+          <div
+            class="flex items-center justify-center rounded-t-xl bg-[#6a462e] h-32 sm:h-36"
+          >
+            <p class="text-5xl">🛏️</p>
+          </div>
+          <div class="p-5 sm:p-6 space-y-3 sm:space-y-4 bg-[#ffffff] rounded-b-xl">
+            <p class="uppercase text-xs tracking-[2.5px] text-[#a9744b]" style="font-family: &quot;DM Mono&quot;, monospace">Most popular</p>
+            <p
+              class="text-xl sm:text-2xl font-semibold text-[#2b170f]"
+              style="font-family: &quot;Playfair Display&quot;, serif"
+            >
+              King Size Storage Beds
+            </p>
+            <p class="text-[#676d72] text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+              Hydraulic lift or drawer storage - perfect for Delhi apartments.
+              Available in sheesham solid wood, teak, or premium BWR plywood
+              with laminate finish.
+            </p>
+          </div>
+        </div>
+        <div class="hover:shadow-xl transition duration-200">
+          <div
+            class="flex items-center justify-center rounded-t-xl bg-[#6a462e] h-32 sm:h-36"
+          >
+            <p class="text-5xl">🛏️</p>
+          </div>
+          <div class="p-5 sm:p-6 space-y-3 sm:space-y-4 bg-[#ffffff] rounded-b-xl">
+            <p class="uppercase text-xs tracking-[2.5px] text-[#a9744b]" style="font-family: &quot;DM Mono&quot;, monospace">Most popular</p>
+            <p
+              class="text-xl sm:text-2xl font-semibold text-[#2b170f]"
+              style="font-family: &quot;Playfair Display&quot;, serif"
+            >
+              King Size Storage Beds
+            </p>
+            <p class="text-[#676d72] text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+              Hydraulic lift or drawer storage - perfect for Delhi apartments.
+              Available in sheesham solid wood, teak, or premium BWR plywood
+              with laminate finish.
+            </p>
+          </div>
+        </div>
+        <div class="hover:shadow-xl transition duration-200">
+          <div
+            class="flex items-center justify-center rounded-t-xl bg-[#6a462e] h-32 sm:h-36"
+          >
+            <p class="text-5xl">🛏️</p>
+          </div>
+          <div class="p-5 sm:p-6 space-y-3 sm:space-y-4 bg-[#ffffff] rounded-b-xl">
+            <p class="uppercase text-xs tracking-[2.5px] text-[#a9744b]" style="font-family: &quot;DM Mono&quot;, monospace">Most popular</p>
+            <p
+              class="text-xl sm:text-2xl font-semibold text-[#2b170f]"
+              style="font-family: &quot;Playfair Display&quot;, serif"
+            >
+              King Size Storage Beds
+            </p>
+            <p class="text-[#676d72] text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+              Hydraulic lift or drawer storage - perfect for Delhi apartments.
+              Available in sheesham solid wood, teak, or premium BWR plywood
+              with laminate finish.
+            </p>
+          </div>
+        </div>
+        <div class="hover:shadow-xl transition duration-200">
+          <div
+            class="flex items-center justify-center rounded-t-xl bg-[#6a462e] h-32 sm:h-36"
+          >
+            <p class="text-5xl">🛏️</p>
+          </div>
+          <div class="p-5 sm:p-6 space-y-3 sm:space-y-4 bg-[#ffffff] rounded-b-xl">
+            <p class="uppercase text-xs tracking-[2.5px] text-[#a9744b]" style="font-family: &quot;DM Mono&quot;, monospace">Most popular</p>
+            <p
+              class="text-xl sm:text-2xl font-semibold text-[#2b170f]"
+              style="font-family: &quot;Playfair Display&quot;, serif"
+            >
+              King Size Storage Beds
+            </p>
+            <p class="text-[#676d72] text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+              Hydraulic lift or drawer storage - perfect for Delhi apartments.
+              Available in sheesham solid wood, teak, or premium BWR plywood
+              with laminate finish.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ MATERIALS ═══════════════════════════ -->
+    <section class="bg-[#fbfbf9] py-12 sm:py-16 lg:py-20 px-5 sm:px-8 md:px-10 lg:px-16 xl:px-28">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center gap-8 lg:gap-16">
+        <!-- ── LEFT: image ── -->
+        <div class="w-full lg:flex-1 max-w-[420px] mx-auto lg:mx-0 lg:max-w-[440px]">
+          <div
+            class="aspect-square rounded-xl bg-gradient-to-br from-[#e6d9c8] to-[#cdb89c] flex items-center justify-center overflow-hidden"
+          >
+            <!-- TODO: replace emoji placeholder with a real material/wood photo -->
+            <p class="text-7xl">🪵</p>
+          </div>
+        </div>
+
+        <!-- ── RIGHT: content ── -->
+        <div class="w-full lg:flex-1 space-y-4 sm:space-y-5">
+          <div class="flex items-center gap-3">
+            <span class="w-8 sm:w-10 md:w-14 h-[2px] bg-[#a9744b] shrink-0"></span>
+            <p
+              class="text-[9px] sm:text-[10px] md:text-xs text-[#a9744b] tracking-[2.5px] uppercase font-medium"
+              style="font-family: &quot;DM Mono&quot;, monospace"
+            >
+              Materials
+            </p>
+          </div>
+
+          <h2
+            class="text-[clamp(1.5rem,4vw,2.25rem)] font-bold text-[#2b170f] leading-[1.2]"
+            style="font-family: &quot;Playfair Display&quot;, serif"
+          >
+            Premium Materials for Lasting Beds
+          </h2>
+
+          <p
+            class="text-[#676d72] text-sm sm:text-base leading-relaxed"
+            style="font-family: &quot;Inter&quot;, sans-serif"
+          >
+            We select materials based on your bedroom's humidity, usage, and
+            budget. Here's what we work with:
+          </p>
+
+          <div class="pt-1">
+            <div class="flex items-start gap-3 py-3">
+              <span class="text-[#c17d3c] font-bold shrink-0 text-sm mt-0.5">✓</span>
+              <p class="text-[#2b170f]/85 text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+                <span class="font-semibold">Solid Sheesham (Rosewood)</span> — Durable, beautiful grain, classic Indian choice. Long-lasting &amp; termite-resistant.
+              </p>
+            </div>
+            <div class="h-px bg-[#e6dccb]"></div>
+
+            <div class="flex items-start gap-3 py-3">
+              <span class="text-[#c17d3c] font-bold shrink-0 text-sm mt-0.5">✓</span>
+              <p class="text-[#2b170f]/85 text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+                <span class="font-semibold">Teak Wood</span> — Weather-resistant, premium quality, excellent for storage beds with long life.
+              </p>
+            </div>
+            <div class="h-px bg-[#e6dccb]"></div>
+
+            <div class="flex items-start gap-3 py-3">
+              <span class="text-[#c17d3c] font-bold shrink-0 text-sm mt-0.5">✓</span>
+              <p class="text-[#2b170f]/85 text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+                <span class="font-semibold">BWR Plywood (Marine Grade)</span> — ISI-certified, termite &amp; moisture resistant structural base.
+              </p>
+            </div>
+            <div class="h-px bg-[#e6dccb]"></div>
+
+            <div class="flex items-start gap-3 py-3">
+              <span class="text-[#c17d3c] font-bold shrink-0 text-sm mt-0.5">✓</span>
+              <p class="text-[#2b170f]/85 text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+                <span class="font-semibold">MDF with Laminate</span> — Budget-friendly, smooth finish, available in 300+ colour options.
+              </p>
+            </div>
+            <div class="h-px bg-[#e6dccb]"></div>
+
+            <div class="flex items-start gap-3 py-3">
+              <span class="text-[#c17d3c] font-bold shrink-0 text-sm mt-0.5">✓</span>
+              <p class="text-[#2b170f]/85 text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+                <span class="font-semibold">Hettich / Hafele Hardware</span> — Soft-close drawer systems, hydraulic lifts that last decades.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ FAQ ═══════════════════════════ -->
+    <section class="bg-[#f7f4ef] py-12 sm:py-16 lg:py-20 px-5 sm:px-8 md:px-10 lg:px-16 xl:px-28">
+      <div class="max-w-3xl mx-auto space-y-8 sm:space-y-10">
+        <div class="space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="w-8 sm:w-10 md:w-14 h-[2px] bg-[#a9744b] shrink-0"></span>
+            <p
+              class="text-[9px] sm:text-[10px] md:text-xs text-[#a9744b] tracking-[2.5px] uppercase font-medium"
+              style="font-family: &quot;DM Mono&quot;, monospace"
+            >
+              FAQ
+            </p>
+          </div>
+          <h2
+            class="text-[clamp(1.5rem,4vw,2.25rem)] font-bold text-[#2b170f] leading-[1.2]"
+            style="font-family: &quot;Playfair Display&quot;, serif"
+          >
+            Common Questions — Wooden Beds in Delhi
+          </h2>
+        </div>
+
+        <div class="divide-y divide-[#e6dccb]">
+          <!-- Q1 -->
+          <div class="py-4 sm:py-5" data-faq-item>
+            <button
+              type="button"
+              class="w-full flex items-center justify-between gap-4 text-left"
+              onclick="toggleFaq(this)"
+            >
+              <span class="text-[#2b170f] font-medium text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+                What is the standard size of a king-size bed in India?
+              </span>
+              <span
+                data-faq-icon
+                class="faq-icon shrink-0 w-6 h-6 rounded-full bg-[#ece1ce] text-[#a9744b] flex items-center justify-center text-base font-medium"
+                >+</span
+              >
+            </button>
+            <div class="faq-panel" data-faq-panel>
+              <p class="text-[#676d72] text-sm sm:text-base pt-3 leading-relaxed" style="font-family: &quot;Inter&quot;, sans-serif">
+                A standard king-size bed in India is 72 x 78 inches (6 x 6.5 ft). Some
+                buyers prefer a wider 78 x 78 inch size for extra room. Since we
+                build every bed to order, we can match any non-standard size
+                you need at no extra cost.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="py-4 sm:py-5" data-faq-item>
+            <button
+              type="button"
+              class="w-full flex items-center justify-between gap-4 text-left"
+              onclick="toggleFaq(this)"
+            >
+              <span class="text-[#2b170f] font-medium text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+                How much does a custom wooden bed cost in Delhi NCR?
+              </span>
+              <span
+                data-faq-icon
+                class="faq-icon shrink-0 w-6 h-6 rounded-full bg-[#ece1ce] text-[#a9744b] flex items-center justify-center text-base font-medium"
+                >+</span
+              >
+            </button>
+            <div class="faq-panel" data-faq-panel>
+              <p class="text-[#676d72] text-sm sm:text-base pt-3 leading-relaxed" style="font-family: &quot;Inter&quot;, sans-serif">
+                Pricing starts from ₹15,000 for a basic plywood bed and goes up
+                based on size, wood type, and storage. Solid sheesham or teak
+                beds with hydraulic storage sit at the higher end. Share your
+                requirements with us for an exact quote.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="py-4 sm:py-5" data-faq-item>
+            <button
+              type="button"
+              class="w-full flex items-center justify-between gap-4 text-left"
+              onclick="toggleFaq(this)"
+            >
+              <span class="text-[#2b170f] font-medium text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+                Do you make beds with hydraulic storage in Delhi?
+              </span>
+              <span
+                data-faq-icon
+                class="faq-icon shrink-0 w-6 h-6 rounded-full bg-[#ece1ce] text-[#a9744b] flex items-center justify-center text-base font-medium"
+                >+</span
+              >
+            </button>
+            <div class="faq-panel" data-faq-panel>
+              <p class="text-[#676d72] text-sm sm:text-base pt-3 leading-relaxed" style="font-family: &quot;Inter&quot;, sans-serif">
+                Yes. Hydraulic lift storage is one of our most requested
+                options, especially for compact Delhi NCR apartments. If you'd
+                rather have easier day-to-day access, we also build
+                drawer-style storage as an alternative.
+              </p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="py-4 sm:py-5" data-faq-item>
+            <button
+              type="button"
+              class="w-full flex items-center justify-between gap-4 text-left"
+              onclick="toggleFaq(this)"
+            >
+              <span class="text-[#2b170f] font-medium text-sm sm:text-base" style="font-family: &quot;Inter&quot;, sans-serif">
+                Which wood is best for a bed in Delhi's climate?
+              </span>
+              <span
+                data-faq-icon
+                class="faq-icon shrink-0 w-6 h-6 rounded-full bg-[#ece1ce] text-[#a9744b] flex items-center justify-center text-base font-medium"
+                >+</span
+              >
+            </button>
+            <div class="faq-panel" data-faq-panel>
+              <p class="text-[#676d72] text-sm sm:text-base pt-3 leading-relaxed" style="font-family: &quot;Inter&quot;, sans-serif">
+                Sheesham and teak handle Delhi's dry summers and humid
+                monsoons well, since both resist warping and termites. If
+                you're on a tighter budget, BWR-grade plywood with a laminate
+                finish is a durable, moisture-resistant alternative.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -172,5 +555,28 @@
     <!-- Load shared navbar, footer & interactive scripts -->
     <script src="/components.js"></script>
 
+    <!-- FAQ accordion -->
+    <script>
+      function toggleFaq(button) {
+        const item = button.closest("[data-faq-item]");
+        const panel = item.querySelector("[data-faq-panel]");
+        const icon = item.querySelector("[data-faq-icon]");
+        const isOpen = panel.style.maxHeight && panel.style.maxHeight !== "0px";
+
+        // close all
+        document.querySelectorAll("[data-faq-panel]").forEach((p) => {
+          p.style.maxHeight = "0px";
+        });
+        document.querySelectorAll("[data-faq-icon]").forEach((i) => {
+          i.classList.remove("rotate-45");
+        });
+
+        // open clicked one if it wasn't already open
+        if (!isOpen) {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          icon.classList.add("rotate-45");
+        }
+      }
+    </script>
   </body>
 </html>
