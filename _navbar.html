@@ -1,8 +1,23 @@
+<!-- FIX: mobileMenu CSS lives here so every page that injects this navbar
+     automatically gets the hamburger animation — no per-page style block needed. -->
+<style>
+  #mobileMenu {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  #mobileMenu.open {
+    max-height: 500px;
+    opacity: 1;
+  }
+</style>
+
 <nav class="bg-[#2c1811] text-white shadow-md border-b-2 border-[#452c20] relative z-50">
   <div class="w-full px-5 md:px-10 lg:px-16 xl:px-28 h-16 lg:h-20 flex justify-between items-center">
     <!-- Logo -->
-    <a href="/" class="w-20 md:w-28 h-20 md:h-28" >
-     <img src="logo.png" alt="WoodKarigari Logo"  />
+    <a href="/" class="w-20 md:w-28 h-20 md:h-28">
+      <img src="/logo.png" alt="WoodKarigari Logo" />
     </a>
 
     <!-- Desktop Nav -->
@@ -15,14 +30,14 @@
       <a href="/dining-storage.html" class="hover:text-[#b97b44] transition">Dining &amp; Storage</a>
       <a href="/custom.html" class="hover:text-[#b97b44] transition">Custom</a>
       <a href="/gallery.html" class="hover:text-[#b97b44] transition">Gallery</a>
-      <a href="#quote" class="bg-[#bc7e44] px-5 py-2 rounded-md hover:bg-[#a56a36] transition font-semibold whitespace-nowrap ml-2">
+      <a href="/get-free-quote.html" class="bg-[#bc7e44] px-5 py-2 rounded-md hover:bg-[#a56a36] transition font-semibold whitespace-nowrap ml-2">
         Get Free Quote
       </a>
     </div>
 
     <!-- Mobile: CTA + Hamburger -->
     <div class="flex items-center gap-3 lg:hidden">
-      <a href="#quote" class="bg-[#bc7e44] px-3.5 py-1.5 rounded-md text-white font-semibold text-xs sm:text-sm whitespace-nowrap">
+      <a href="/get-free-quote.html" class="bg-[#bc7e44] px-3.5 py-1.5 rounded-md text-white font-semibold text-xs sm:text-sm whitespace-nowrap">
         Get Free Quote
       </a>
       <button id="menuToggle" aria-label="Toggle menu" class="p-2 rounded-md hover:bg-[#3d2015] transition text-white">

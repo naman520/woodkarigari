@@ -31,8 +31,7 @@
   </head>
   <body class="bg-[#2b170f]">
     <!-- ═══════════════════════════ NAVBAR ═══════════════════════════ -->
-        <div id="site-nav"></div>
-
+    <div id="site-nav"></div>
 
     <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
     <section class="bg-[#2b170f]">
@@ -707,7 +706,7 @@
               class="bg-[#3d2b22] p-6 rounded-2xl border border-[#4f3a30] hover:border-[#a9744b] transition-colors duration-300 relative"
             >
               <span
-                class="text-white text-4xl font-bold  absolute top-2 right-4"
+                class="text-white text-4xl font-bold absolute top-2 right-4"
                 style="font-family: &quot;Playfair Display&quot;, serif"
                 >01</span
               >
@@ -731,7 +730,7 @@
               class="bg-[#3d2b22] p-6 rounded-2xl border border-[#4f3a30] hover:border-[#a9744b] transition-colors duration-300 relative"
             >
               <span
-                class="text-white text-4xl font-bold  absolute top-2 right-4"
+                class="text-white text-4xl font-bold absolute top-2 right-4"
                 style="font-family: &quot;Playfair Display&quot;, serif"
                 >02</span
               >
@@ -755,7 +754,7 @@
               class="bg-[#3d2b22] p-6 rounded-2xl border border-[#4f3a30] hover:border-[#a9744b] transition-colors duration-300 relative"
             >
               <span
-                class="text-white text-4xl font-bold  absolute top-2 right-4"
+                class="text-white text-4xl font-bold absolute top-2 right-4"
                 style="font-family: &quot;Playfair Display&quot;, serif"
                 >03</span
               >
@@ -779,7 +778,7 @@
               class="bg-[#3d2b22] p-6 rounded-2xl border border-[#4f3a30] hover:border-[#a9744b] transition-colors duration-300 relative"
             >
               <span
-                class="text-white text-4xl font-bold  absolute top-2 right-4"
+                class="text-white text-4xl font-bold absolute top-2 right-4"
                 style="font-family: &quot;Playfair Display&quot;, serif"
                 >04</span
               >
@@ -803,7 +802,7 @@
               class="bg-[#3d2b22] p-6 rounded-2xl border border-[#4f3a30] hover:border-[#a9744b] transition-colors duration-300 relative"
             >
               <span
-                class="text-white text-4xl font-bold  absolute top-2 right-4"
+                class="text-white text-4xl font-bold absolute top-2 right-4"
                 style="font-family: &quot;Playfair Display&quot;, serif"
                 >05</span
               >
@@ -1130,52 +1129,13 @@
 
     <!-- Footer -->
 
-       <div id="site-footer"></div>
-
+    <div id="site-footer"></div>
 
     <!-- SCRIPTS  -->
 
     <!-- Mobile Navbar Script -->
 
-   
-    <!-- FAQs Script -->
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const questions = document.querySelectorAll(".faq-question");
-
-        questions.forEach(function (question) {
-          question.addEventListener("click", function () {
-            const targetId = this.getAttribute("data-target");
-            const answer = document.getElementById(targetId);
-            const icon = this.querySelector(".faq-icon");
-
-            // Check if this answer is already open
-            const isOpen = !answer.classList.contains("hidden");
-
-            // Close all answers
-            document.querySelectorAll(".faq-answer").forEach(function (ans) {
-              ans.classList.add("hidden");
-            });
-
-            // Reset all icons to '+'
-            document.querySelectorAll(".faq-icon").forEach(function (icn) {
-              icn.textContent = "+";
-              icn.style.transform = "rotate(0deg)";
-            });
-
-            // If it was closed, open it
-            if (!isOpen) {
-              answer.classList.remove("hidden");
-              icon.textContent = "−";
-              icon.style.transform = "rotate(180deg)";
-            }
-          });
-        });
-      });
-
-    </script>
+    <!-- FAQ accordion is handled by components.js — no inline script needed -->
     <script src="/components.js"></script>
-
   </body>
 </html>
